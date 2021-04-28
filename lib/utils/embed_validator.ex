@@ -1,9 +1,17 @@
 defmodule MyElixir.Utils.EmbedValidator do
   alias Alchemy.Embed
+  alias Skooma.Validators
 
-  @valid_embed %{}
+  def valid? (embed) do
+    case Skooma.valid?(embed, valid_embed_schema()) do
+      {:error, reason} -> {:error, reason}
+      :ok -> embed
+    end
+  end
 
-  def valid? (%Embed{} = embed) do
-    embed
+  defp valid_embed_schema do
+    %{
+      title: [:string, :not_required, Validators.max_length(256)],
+    }
   end
 end
