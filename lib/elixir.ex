@@ -26,7 +26,7 @@ defmodule MyElixir do
   end
 
   def connect_bot do
-    run = Client.start("NTEyNjIzMDEwNTkxODAxMzU1.W-13YQ.-tsfHjk_uDATxM3PjmLIk7Xw6fw")
+    run = Client.start("discord_bot_token")
     use Commands
     use Events
     run
