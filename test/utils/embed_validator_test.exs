@@ -4,7 +4,7 @@ defmodule ElixirTest.Utils.EmbedValidatorTest do
   alias MyElixir.Utils.EmbedValidator
   doctest MyElixir.Utils.EmbedValidator
 
-  test "should return the embed whem is empty" do
+  test "should return the embed when is empty" do
     embed = %Embed{}
     assert EmbedValidator.valid?(embed) == embed
   end
