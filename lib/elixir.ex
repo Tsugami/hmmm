@@ -1,18 +1,13 @@
 defmodule MyElixir do
   use Application
 
-  alias Alchemy.Client
-  alias MyElixir.{Commands,Events}
+  alias MyElixir.DiscordBot
 
   def start(_type, _args) do
-    connect_bot()
-  end
-
-  def connect_bot do
-    bot_token = Application.fetch_env!(:discord_bot, :bot_token)
-    run = Client.start(bot_token)
-    use Commands
-    use Events
-    run
+    case Application.fetch_env!(:discord_bot, :bot_token) do
+      bot_token -> DiscordBot.start(bot_token)
+      _ ->
+        raise "TOKEN environment variable is not set"
+    end
   end
 end
