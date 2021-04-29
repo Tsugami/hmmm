@@ -1,21 +1,15 @@
-# Elixir
+# hmmm
 
-**TODO: Add description**
+Testing elixir for learning purposes
 
-## Installation
+## Install instructions
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `elixir` to your list of dependencies in `mix.exs`:
+### 1) Clone & Install Dependencies
 
-```elixir
-def deps do
-  [
-    {:elixir, "~> 0.1.0"}
-  ]
-end
-```
+1.1) `git clone https://github.com/Tsugami/hmmm.git` - clone repository.
+1.2) `cd hmmm` - cd into your newly created project directory.
+1.3) `mix deps.get` - install dependencies.
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/elixir](https://hexdocs.pm/elixir).
+### 2) Start your app
 
+2.1) mix `mix run --no-halt` or run it in interactive mode `iex -S mix`
