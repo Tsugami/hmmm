@@ -4,23 +4,6 @@ defmodule MyElixir do
   alias Alchemy.Client
   alias MyElixir.{Commands,Events}
 
-  @moduledoc """
-  Documentation for `MyElixir`.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> MyElixir.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
-
   def start(_type, _args) do
     connect_bot()
   end
