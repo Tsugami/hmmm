@@ -12,4 +12,5 @@ Testing elixir for learning purposes
 
 ### 2) Start your app
 
-- 2.1) mix `mix run --no-halt` or run it in interactive mode `iex -S mix`
+- 2.1) create `config/config.exs` with contents of the file `config.example.exs` and configure the keys.
+- 2.2) mix `mix run --no-halt` or run it in interactive mode `iex -S mix`
