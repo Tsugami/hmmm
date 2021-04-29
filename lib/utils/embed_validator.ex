@@ -1,5 +1,4 @@
 defmodule MyElixir.Utils.EmbedValidator do
-  alias Alchemy.Embed
   alias Skooma.Validators
 
   def valid? (embed) do
