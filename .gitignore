@@ -25,3 +25,6 @@ elixir-*.tar
 
 # Temporary files for e.g. tests
 /tmp
+
+# Ignore enviroment configs
+/config/config.exs
